@@ -1,0 +1,65 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+body{
+  transform: translate(0px, 180px);
+  text-align: center;
+  line-height: 15px;
+}
+
+#input{
+  transform: translate(20px,0px);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: black;
+  border-bottom-width: 2px;
+  width: 400px;
+  height: 35px;
+  background-color: none;
+  outline: 0;
+  color: black;
+  font-family: 'Jeju Gothic', serif;
+  font-weight: lighter;
+}
+
+#addBtn{
+  transform: translate(20px,0px);
+  border-radius: 3px;
+  border-color: black;
+  font-size: 22px;
+  font-weight: bold;
+  width: 45px;
+  height: 38px;
+  background-color: white;
+  outline: 0;
+}
+
+#list{
+  color: black;
+  font-weight: normal;
+  font-family: 'Jeju Gothic', serif;
+  font-size: 15px;
+}
+
+#remove{
+  text-align: center;
+  transform: translate();
+  width: 26px;
+  border: none;
+  outline: none;
+  background-color: white;
+  font-size: 15px;
+}
+
+#remove:hover{
+  color: red;
+}
+
+
+.calendar{
+  font-size: 40px;
+}
+
+.myclock{
+  font-size: 20px;
+}
