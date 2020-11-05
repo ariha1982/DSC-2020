@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>html 복습하기</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1>html 복습하기</h1>
+  <h2>ul과 ol</h2>
+  <ul>
+    <li>ul은 순서가 정해져있지 않은 리스트</li>
+    <li>도레미파솔</li>
+  </ul>
+  <ol>
+    <li>ol은 순서가 정해져있는 리스트</li>
+    <li>솔파미레도</li>
+  </ol>
+  <br>
+  <h2>다른 문법 태그들</h2>
+  <p>p는 단락을 구분해주는 태그이다.
+    코드를 짤 때 에디터에서 단락을 나눠놓아도 p를 사용하지 않으면 다 붙어버린다.</p>
+  <p>br은 줄 바꿈 태그이다. 닫아줄 필요가 따로 없다는 특징이 있다.</p>
+  <p>img는 이미지 태그이다. 닫아줄 필요가 없으며 크기나 대체 텍스트와 같은 속성을 정해줄 수 있다.</p>
+  <img src="고양이.jpg" alt="고양이였던 무언가" title="고양이">
+  <p>지금 사진이 왜 안 뜨는지는 나도 모르겠다.</p>
+  <p>table은 표를 만들어주는 태그이다. tr로 열을 정해줄 수 있고 td로 항목들을 넣을 수 있다.</p>
+  <table border = "1">
+    <tr>
+      <td>월</td> <td>화</td> <td>수</td> <td>목</td> <td>금</td>
+    </tr>
+    <tr>
+      <td>mon</td> <td>tue</td> <td>wed</td> <td>thu</td> <td>fri</td>
+    </tr>
+  </table>
+  <p>입력양식은 form을 쓴다. 텍스트입력창을 만들고 싶으면 input 태그에 type을 text로 해주고 버튼이나 체크박스를 만들고 싶으면 type을 button, checkbox로 해준다.
+  선택창을 만들 때는 select태그를 쓰면 된다. input의 type을 submit으로 하면 지정한 서버로 보내진다.
+  form에 action 태그를 통해 입력된 정보를 보낼 서버를 지정해줄수 있다.</p>
+  <form action="어딘가">
+    텍스트입력창: <input type="text"><br>
+    여러줄 입력: <input type="<textarea name="name" rows="2" cols="50"><br>
+    <input type="button" value="버튼" onclick="alert('이건 버튼!')">
+    <input type="checkbox">체크박스
+    <select name="공강?">
+      <option value="yes">있음</option>
+      <option value="no">없음</option>
+    </select>
+    <select name="좋아하는 색?" multiple>
+      <option value="red">빨강</option>
+      <option value="blue">파랑</option>
+      <option value="green">초록</option>
+      <option value="yellow">노랑</option>
+    </select>
+    <input type="submit">
+  </form>
+  원래 정보를 보내면 url에 정보가 뜨게 되는데 form의 method를 post로 하면 url에 정보가 뜨지 않게 지정할 수 있다.
+</body>
+</html>
