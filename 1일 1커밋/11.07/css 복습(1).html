@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      body{border: 3px solid black;}
+      h1{text-align:center;
+      font-size: 2.5rem;}
+      h2{color:grey;}
+      a:visited{
+        background-color:black;
+        color:white;
+      }
+      a:hover{
+        font-weight:bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS 복습하기</h1>
+    <h2>(1)선택자와 타이포그래피, 조화</h2>
+    <ol>
+      <li style="font-weight:bold">선택자</li>
+        <p>어떤 태그를 디자인하려면 선택자를 선택하고 선택한 선택자에 어떤 효과를 줄 지 선택해야한다.</p>
+        <p> 선택자에는 세 종류가 있다. 태그 선택자, id 선택자, class 선택자.
+        태그 선택자는 해당 태그에 속해있는 요소들에 모두 같은 효과를 주는 것이다.
+        id 선택자는 해당 아이디를 가진 태그에만 효과를 주는 것으로 앞에 #을 붙인다.
+        class 선택자는 해당 클래스에 속한 태그에만 효과를 주는 것으로 앞에 온점(.)을 붙인다.</p>
+        <p>상위 태그를 부모, 하위 태그를 자식이라 부르는데,
+          자식 태그만 선택하고 싶다면 '부모 태그>자식태그'를 선택자로 정하면 된다.
+          여러 태그에 같은 효과를 주고 싶다면 표(,)를 이용하면 된다.</p>
+        <p>가상 클래스 태그는 선택자는 클래스 선택자는 아니지만
+          엘리먼트들의 상태에 따라서 마치 클래스 선택자처럼 여러 엘리먼트를 선택할 수 있다.
+          대표적으로는 :link, :visited, :hover, :active가 있다.</p><br>
+        <a href="https://www.opentutorials.org/course/2418/13339" style="color:powderblue">생활코딩 css 수업</a>
+        <br><br><br>
+      <li style="font-weight:bold">타이포그래피</li>
+        <p>'font-size'의 단위에는 rem, px, em이 있다. html 태그에 적용된 font-size의 영향을 받는다.
+          html 태그의 폰트 크기에 따라서 상대적으로 크기가 결정되기 때문에 가급적 rem을 사용하는 것이 바람직하다.</p>
+        <p>'color'는 black, white과 같은 색이름, 16진수, rgb로 표현할 수 있다. 이는 구글링하면 쉽게 나온다.</p>
+        <p>'text-align'로는 정렬을 저할 수 있다. 값으로는 left, right, center, justify가 있다.
+        justify는 양쪽맞춤으로, 왼쪽 오른쪽을 똑같이 채운다.</p>
+        <p>'font-family'로는 서체를 지정할 수 있다. 가지고 있지 않은 서체라도 웹폰트로 가져올 수 있다.</p>
+      <li style="font-weight:bold">조화</li>
+        <p>부모 태그에 폰트 색상과 같은 설정을 적용하면 자녀 태그에도 같이 적용이 된다.
+        이를 상속이라고 하고, 상위 엘리먼트에 적용된 효과를 하위 엘리먼트가 물려받는 것이다.</p>
+        <p>캐스캐이딩은 각 효과에 대한 '우선순위'를 설정하는 것에 대한 규칙이다.
+          우선순위는 더 정교하고 체계적인게 더 우위를 차지한다.
+          우선순위는 'style 속성>id 선택자>class 선택자>tag 선택자'순으로 높다.</p>
+
+    </ol>
+  </body>
+</html>
